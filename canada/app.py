@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-st.title("Canada Per Capita Income Prediction")
+st.title("Canada Per Capita Income Prediction - Atharv Singh")
 
 # Load dataset
 df = pd.read_csv("canada_per_capita_income.csv")
@@ -44,3 +44,4 @@ st.success(f"Predicted Per Capita Income in {year}: ${prediction:.2f}")
 if st.button("Predict 2020"):
     pred2020 = model.predict([[2020]])[0]
     st.info(f"Prediction for 2020: ${pred2020:.2f}")
+
